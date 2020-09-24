@@ -37,15 +37,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Registro</title>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assests\css\style.css"> 
     </head>
     <body>
         <?php require 'partials/header.php'?>
-        <?php if(!empty($message)): ?>
-            <p><?= $message ?></p>
-        <?php endif; ?>
         <h1>Registro</h1>
         <span> o <a href="login.php"> Ingresar </a></spam>
         <form action = "signup.php" method = "post">
@@ -57,5 +54,8 @@
             <input class="input-login" type = "password" name = "Confirm_password" placeholder = "Confirmar contraseña">
             <input class="input-pass" type = "submit" value = "Registrar">
         </form>
+        <?php if(!empty($message)): ?>
+            <p><?= $message ?></p>
+        <?php endif; ?>
     </body> 
 </html>

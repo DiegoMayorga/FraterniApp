@@ -6,7 +6,6 @@
         $records->bindParam(':email', $email);
         $records->execute();
         $results=$records->fetchAll(\PDO::FETCH_ASSOC);
-        $filas=count($results);
-        return $filas;
+        return $results;
     }
 ?>

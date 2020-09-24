@@ -3,9 +3,6 @@
     if(isset($_SESSION['user_id'])){
         header ('Location: /Login_v0.5');
     }
-    if (isset($_SESSION['user_id'])) {
-        header('Location: /Login_v0.5');
-    }
     require 'DateBase.php';
     $message = '';
     if(!empty($_POST['email'])&&!empty($_POST['password'])){
@@ -43,5 +40,6 @@
             <input class="input-login" type = "password" name = "password" placeholder = "Contraseña">
             <input class="input-pass" type = "submit" value = "Enviar">
         </form>
+        <a href="recovery.php"> Olvidé mi conseña </a>
     </body>
 </html>
