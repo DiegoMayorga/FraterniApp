@@ -1,3 +1,4 @@
+/*
 DROP DATABASE fraterniApp;
 CREATE DATABASE fraterniApp;
 USE fraterniApp;
@@ -10,3 +11,12 @@ CREATE TABLE IF NOT EXISTS usuario (
     usuarioContraseña VARCHAR(250) NOT NULL,
 	fk_universidadId INT(11),
 );
+
+CREATE TABLE IF NOT EXISTS publicacion (
+	publicacionId INT(11) AUTO_INCREMENT PRIMARY KEY,
+	publicacionTitulo  VARCHAR(140) NOT NULL,
+	publicacionDescripcion TEXT NOT NULL,
+	fk_tipoPublicacionId INT(11),
+	fk_usuarioId INT(11)
+);
+*/
