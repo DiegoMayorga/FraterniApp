@@ -1,0 +1,30 @@
+body{
+    
+    background-color: #123273;
+}
+
+#mainContainer{
+    background-color: #D9D7D7;
+    margin-top: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+
+.adjust-button{
+    /*background-color: #123273;*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.adjust-center{
+    text-align: center;
+}
+.text-logo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    text-decoration: none;
+    color: #000;
+}
