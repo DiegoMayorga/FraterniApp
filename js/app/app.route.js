@@ -1,3 +1,5 @@
 var _route = {
-    path:'http://localhost/fraterniapp-be/'
+    path:'http://localhost:8000/api/',
+    login:'login',
+    users:'users'
 }

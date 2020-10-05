@@ -21,11 +21,11 @@
                             <h1 class="text-logo">FraterniApp</h1>
                         </div>
                     </div>
-                    <form>
+                    <form id="signupForm">
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group">
-                                    <label for="txtName">Nombre</label>
+                                    <label for="txtName">Nombre de usuario</label>
                                     <input id="txtName" class="form-control" type="text"
                                         placeholder="Nombre" required>
                                 </div>
@@ -43,18 +43,22 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group">
-                                    <label for="txtPhone">Telefono</label>
+                                    <label for="txtPhone">Teléfono celular</label>
                                     <input id="txtPhone" class="form-control" type="tel"
-                                        placeholder="000 - 000 - 0000" required>
+                                        placeholder="Número de celular (10 dígitos)" required>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group">
-                                    <label for="txtCollege">Universidad</label>
-                                    <input id="txtCollege" class="form-control" type="text"
-                                        placeholder="Universidad" required>
+                                    <label for="selCollege">Universidad</label>
+                                    <select id="selCollege" class="form-control" required>
+                                        <option value ="">--</option>
+                                        <option value ="1">Universidad Manuela Beltrán</option>
+                                        <option value ="2">Universidad de La Salle</option>
+                                        <option value ="3">Universidad Militar Nueva Granada</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -93,15 +97,14 @@
     </div>
 
     
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src='js/app/app.dom.js'></script>
+    <script src="js/app/app.ajax.js"></script>
+    <script src="js/app/app.route.js"></script>
+    <script src="js/signup/signup.control.js"></script>
+    <script src="js/signup/signup.view.js"></script>
 </body>
 
 </html>

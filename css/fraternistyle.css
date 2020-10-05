@@ -28,3 +28,15 @@ body{
     text-decoration: none;
     color: #000;
 }
+
+.adjust-button{
+    background-color: #123273;
+}
+
+.container{
+    padding: 0 120px;
+}
+
+.selCollege{
+    padding: 100%;
+}

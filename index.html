@@ -21,13 +21,13 @@
                             <h1 class="text-logo">FraterniApp</h1>
                         </div>
                     </div>
-                    <form>
+                    <form id="loginForm">
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="txtEmail">Correo electrónico</label>
                                     <input id="txtEmail" class="form-control" type="email"
-                                        placeholder="ejemplo@ejemplo.com">
+                                        placeholder="ejemplo@ejemplo.com" required>
                                 </div>
                             </div>
                         </div>
@@ -36,7 +36,7 @@
                                 <div class="form-group">
                                     <label for="txtPassword">Contraseña</label>
                                     <input id="txtPassword" class="form-control" type="password"
-                                        placeholder="Contraseña">
+                                        placeholder="Contraseña" required>
                                 </div>
                             </div>
                         </div>
@@ -49,7 +49,7 @@
                     </form>
                     <div class="row">
                         <div class="col-12">
-                            <button class="btn btn-primary btn-block adjust-button">Registrarse</button>
+                            <button id="btnRegister" class="btn btn-primary btn-block adjust-button">Registrarse</button>
                         </div>
                     </div>
                     <div class="row">
@@ -61,15 +61,14 @@
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src='js/app/app.dom.js'></script>
+    <script src="js/app/app.ajax.js"></script>
+    <script src="js/app/app.route.js"></script>
+    <script src="js/index/index.control.js"></script>
+    <script src="js/index/index.view.js"></script>
 </body>
 
 </html>
