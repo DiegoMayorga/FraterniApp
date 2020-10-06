@@ -2,7 +2,6 @@ var thatSignup;
 var signupView = {
     init:function(){
         thatSignup = this;
-        console.log('signupCargado');
         // Listener del evento submit de un formulario
         $('#signupForm').on('submit',thatSignup.sendRegisterForm);
         $('#btnReturn').on('click',thatSignup.goBack);
