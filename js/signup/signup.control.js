@@ -3,7 +3,7 @@ var signupControl = {
         return _app.ajax({
             'url':_route.path + _route.users,
             'completado':callBack,
-            'data':data,
+            'data':JSON.stringify(data),
             'contentType':'application/json'
         });
     }

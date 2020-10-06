@@ -11,7 +11,7 @@ var signupView = {
         //Evitar que la página se refresque
         e.preventDefault();
         var txtName = $('#txtName').val();
-        console.log($('#txtName').val());
+        console.log(txtName);
         var txtEmail = $('#txtEmail').val();
         console.log(txtEmail);
         var txtPhone = $('#txtPhone').val();
@@ -26,12 +26,13 @@ var signupView = {
             alert('Las contraseñas no coinciden');
         }
         var data = {
-            "usuarioNombre":txtName,
-            "usuarioEmail":txtEmail,
-            "usuarioTelefonoPrincipal":txtPhone,
-            "fk_universidadId":selCollege,
-            "usuarioContraseña":txtPassword
+            'usuarioNombre':txtName,
+            'usuarioEmail':txtEmail,
+            'usuarioTelefonoPrincipal':txtPhone,
+            'fk_universidadId':selCollege,
+            'usuarioContraseña':txtPassword
         };
+        console.log(data);
         signupControl.signup(data,thatSignup.sendRegisterFormCallBack);
     },
 
