@@ -11,17 +11,11 @@ var signupView = {
         //Evitar que la página se refresque
         e.preventDefault();
         var txtName = $('#txtName').val();
-        console.log(txtName);
         var txtEmail = $('#txtEmail').val();
-        console.log(txtEmail);
         var txtPhone = $('#txtPhone').val();
-        console.log(txtPhone);
         var selCollege = parseInt($('#selCollege :selected').val());
-        console.log(selCollege);
         var txtPassword = $('#txtPassword').val();
-        console.log(txtPassword);
         var txtConfirmPassword = $('#txtConfirmPassword').val();
-        console.log(txtConfirmPassword);
         if (txtPassword !== txtConfirmPassword){
             alert('Las contraseñas no coinciden');
         }
