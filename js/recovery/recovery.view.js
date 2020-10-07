@@ -18,7 +18,7 @@ var recoveryView = {
     },
     sendRecoveryFormCallBack:function(data){
         if (data){
-            window.location = 'home.html'
+            window.location = 'recovery.html'
         }
     },
     goBack:function(){

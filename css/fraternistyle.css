@@ -6,9 +6,24 @@ body{
 #mainContainer{
     background-color: #D9D7D7;
     margin-top: 60px;
+    margin-bottom: 60px;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 20px;
+}
+
+#homeContainer{
+    background-color: #D9D7D7;
+    margin-top: 20px;
+    padding-right: 0;
+    padding-left: 60px;
+}
+
+#homeContainer2{
+    background-color: #D9D7D7;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    padding: 20px 40px
 }
 
 .adjust-button{
@@ -20,6 +35,11 @@ body{
 .adjust-center{
     text-align: center;
 }
+
+.adjust-left{
+    text-align: left;
+}
+
 .text-logo{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -29,12 +49,33 @@ body{
     color: #000;
 }
 
+.home-logo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 70vw;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    text-decoration: none;
+    color: #000;
+}
+
+.logout-button{
+    color: #D9D7D7;
+    background-color: #123273;
+    margin: 10px 0;
+    padding: 10px;
+}
+
 .adjust-button{
     background-color: #123273;
 }
 
 .container{
     padding: 0 120px;
+}
+
+.home-container{
+    padding: 0 15px;
 }
 
 .selCollege{

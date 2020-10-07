@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <title>FraterniApp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fraternistyle.css">
+</head>
+<body>
+    <div class="home-container">
+        <div id="homeContainer">
+            <div class="row">
+                <h1 class="home-logo">FraterniApp</h1>
+                <a href="index.html"><button id="btnlogout"class="logout-button">Cerrar sesión</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="homeContainer2">
+            <form id="postForm">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="txtVacant"><b>¿Qué vacante quieres publicar?</b></label><br><br>
+                            <label for="txtTitle">Título de la vacante</label>
+                            <input id="txtTitle" class="form-control" type="text"
+                                placeholder="Escribe aquí el título de tu publicación" required><br>
+                            <label for="txtVacant">Descripción de la vacante</label>
+                            <input id="txtVacant" class="form-control" type="text"
+                                placeholder="Escribe aquí la vacante" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <button id="btnPost" class="btn btn-primary btn-block adjust-button">Publicar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src='js/app/app.dom.js'></script>
+    <script src="js/app/app.ajax.js"></script>
+    <script src="js/app/app.route.js"></script>
+</body>
+</html>

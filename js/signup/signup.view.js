@@ -25,7 +25,6 @@ var signupView = {
             'fk_universidadId':selCollege,
             'usuarioContraseña':txtPassword
         };
-        console.log(data);
         signupControl.signup(data,thatSignup.sendRegisterFormCallBack);
     },
 
