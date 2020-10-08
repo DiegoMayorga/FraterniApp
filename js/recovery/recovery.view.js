@@ -22,7 +22,6 @@ var recoveryView = {
         }
     },
     goBack:function(){
-        console.log('test');
         window.location = 'index.html'
     }
 };

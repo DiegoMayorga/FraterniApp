@@ -3,7 +3,7 @@ var recoveryControl = {
         return _app.ajax({
             'url':_route.path + _route.recovery,
             'completado':callBack,
-            'data':data,
+            'data':JSON.stringify(data),
             'contentType':'application/json'
         });
     }

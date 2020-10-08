@@ -1,0 +1,65 @@
+<div>
+    <div>
+        <div class="cardHome">
+            <div class="card-body">
+                <h5 class="card-title"><b>Special title treatment</b></h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-light2">Go somewhere</a>
+            </div>
+            <div class="card-footer text-muted">
+                2 days ago
+            </div>
+        </div>
+        <div class="cardHome">
+            <div class="card-body">
+                <h5 class="card-title"><b>Special title treatment</b></h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-light2">Go somewhere</a>
+            </div>
+            <div class="card-footer text-muted">
+                2 days ago
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="homeContainer2">
+            <form id="postForm">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <div class="col-12 adjust-center">
+                            <label class="home-title" for="txtVacant"><h1>¿Qué vacante quieres publicar?</h1></label><br><br>
+                        </div>
+                            <label for="txtTitle">Título de la vacante</label>
+                            <input id="txtTitle" class="form-control" type="text"
+                                placeholder="Escribe aquí el título de tu publicación" required><br>
+                            <label for="txtVacant">Descripción de la vacante</label>
+                            <textarea id="txtVacant" class="form-control" type="text" rows="3"
+                                placeholder="Escribe aquí la vacante" required></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="selCollege">Universidad</label>
+                            <select id="selCollege" class="form-control" required>
+                                <option value ="">--</option>
+                                <option value ="1">Universidad Manuela Beltrán</option>
+                                <option value ="2">Universidad de La Salle</option>
+                                <option value ="3">Universidad Militar Nueva Granada</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button class="btn btn-light2 btn-block">Publicar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="js/post/post.control.js"></script>
+<script src="js/post/post.view.js"></script>

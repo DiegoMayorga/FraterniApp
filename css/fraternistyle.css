@@ -1,6 +1,6 @@
 body{
     
-    background-color: #123273;
+    background-color: #4C736F;
 }
 
 #mainContainer{
@@ -10,20 +10,6 @@ body{
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 20px;
-}
-
-#homeContainer{
-    background-color: #D9D7D7;
-    margin-top: 20px;
-    padding-right: 0;
-    padding-left: 60px;
-}
-
-#homeContainer2{
-    background-color: #D9D7D7;
-    margin-top: 50px;
-    margin-bottom: 60px;
-    padding: 20px 40px
 }
 
 .adjust-button{
@@ -46,38 +32,46 @@ body{
     font-family: 'Lobster', cursive;
     font-size: 40px;
     text-decoration: none;
-    color: #000;
+    color: #012623;
 }
 
-.home-logo{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 70vw;
-    font-family: 'Lobster', cursive;
-    font-size: 40px;
+.firstColor{
+    color: #012623;
+}
+
+.firstColor:hover{
+    color: #012623;
     text-decoration: none;
-    color: #000;
+}
+
+.secondColor{
+    color: #4C736F;
 }
 
 .logout-button{
     color: #D9D7D7;
-    background-color: #123273;
+    background-color: #012623;
     margin: 10px 0;
     padding: 10px;
 }
 
 .adjust-button{
-    background-color: #123273;
+    background-color: #012623;
 }
 
 .container{
     padding: 0 120px;
 }
 
-.home-container{
-    padding: 0 15px;
-}
-
 .selCollege{
     padding: 100%;
+}
+
+.btn-primary{
+    background-color: #012623 !important;
+    border-color: #012623 !important;
+}
+
+.btn-primary:hover{
+    background-color: #012623 !important;
 }

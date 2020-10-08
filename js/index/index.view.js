@@ -2,7 +2,6 @@ var thatIndex;
 var indexView = {
     init:function(){
         thatIndex = this;
-        console.log('indexCargado');
         // Listener del evento submit de un formulario
         $('#loginForm').on('submit',thatIndex.sendLoginForm);
         $('#btnRegister').on('click',thatIndex.register);
@@ -16,11 +15,11 @@ var indexView = {
             "usuarioEmail":txtEmail,
             "usuarioContraseña":txtPassword
         };
-        loginControl.login(data,thatIndex.sendLoginFormCallBack);
+        indexControl.login(data,thatIndex.sendLoginFormCallBack);
     },
     sendLoginFormCallBack:function(data){
         if (data){
-            window.location = 'index.html'
+            window.location = 'home.html'
         }
     },
     register:function(){

@@ -1,7 +1,7 @@
-var indexControl = {
-    login:function(data,callBack){
+var homeControl = {
+    home:function(data,callBack){
         return _app.ajax({
-            'url':_route.path + _route.login,
+            'url':_route.path + _route.home,
             'completado':callBack,
             'data':JSON.stringify(data),
             'contentType':'application/json'
