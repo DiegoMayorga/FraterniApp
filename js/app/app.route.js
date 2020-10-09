@@ -3,5 +3,6 @@ var _route = {
     signup:'user/signup',
     login:'user/login',
     users:'users',
-    recovery:'user/recovery'
+    recovery:'user/recovery',
+    post:'post/list'
 }

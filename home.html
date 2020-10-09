@@ -1,29 +1,58 @@
 <!DOCTYPE html>
 <html lang="sp">
+
 <head>
-    <meta charset="UTF-8">
-    <title>FraterniApp</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/fraternistyle.css">
-    <link rel="stylesheet" href="css/home.css">
+  <meta charset="UTF-8">
+  <title>FraterniApp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/fraternistyle.css">
+  <link rel="stylesheet" href="css/home.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-dark bg-primary adjust-color-navbar justify-content-between">
-        <a href="home.html" class="home-logo hoverLogo">FraterniApp</a>
-        <form class="form-inline">
-            <button class="btn btn-light btn-logout my-2 my-sm-0" type="submit">Cerrar sesión</button>
-        </form>
-      </nav>
-    <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a href="home.html" class="home-logo hoverLogo ">FraterniApp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li id="btnPosts" class="nav-item">
+          <a class="nav-link" href="#">Publicaciones</a>
+        </li>
+        <li id="btnVacancies" class="nav-item">
+          <a class="nav-link" href="#">Vacantes</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+      <a class="nav-link btnSignout text-center" href="index.html">Cerrar sesión</a>
     </div>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src='js/app/app.dom.js'></script>
-    <script src="js/app/app.ajax.js"></script>
-    <script src="js/app/app.route.js"></script>
+  </nav>
+  <div id="homeContainer2" class="container-fluid">
+  </div>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src='js/app/app.dom.js'></script>
+  <script src="js/app/app.ajax.js"></script>
+  <script src="js/app/app.route.js"></script>
+  <script src="js/home/home.control.js"></script>
+  <script src="js/home/home.view.js"></script>
 </body>
+
 </html>

@@ -11,8 +11,9 @@ var postView = {
         var txtTitle = $('#txtTitle').val();
         var txtVacant = $('#txtVacant').val();
         var data = {
-            "tituloVacante":txtTitle,
-            "contenidoVacante":txtVacant
+            "publicacionTitulo":txtTitle,
+            "publicacionDescripcion":txtVacant,
+            //"fk_tipoPublicacionId":
         };
         postControl.post(data,thatPost.sendPostFormCallBack);
     },
