@@ -1,6 +1,6 @@
 body{
     
-    background-color: #F2F2F2;
+    background-color: #abd6f1;
     color: black !important;
 }
 
@@ -34,27 +34,20 @@ body{
     font-family: 'Lobster', cursive;
     font-size: 40px;
     text-decoration: none;
-    color: black;
+    color: #F2F2F2;
 }
 
 .firstColor{
-    color: black;
+    color: #F2F2F2;
 }
 
 .firstColor:hover{
-    color: black;
+    color: #F2F2F2;
     text-decoration: none;
 }
 
 .secondColor{
-    color: black;
-}
-
-.logout-button{
-    color: #D9D7D7;
-    background-color: #012623;
-    margin: 10px 0;
-    padding: 10px;
+    color: #F2F2F2;
 }
 
 .adjust-button{
