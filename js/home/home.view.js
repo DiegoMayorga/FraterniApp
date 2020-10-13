@@ -36,7 +36,7 @@ var homeView = {
         debugger;
         var txtName = $('#txtName').val();
         var txtEmail = $('#txtEmail').val();
-        var txtPhone = $('txtPhone').val();
+        var txtPhone = $('#txtPhone').val();
         var txtNit = $('#txtNit').val();
         var txtDescription = $('#txtDescription').val();
         var txtSector = parseInt($('#txtSector :selected').val());
