@@ -8,17 +8,36 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12 col-md-2">
+            <div class="col-sm-12 col-md-3 q">
                 <div class="row">
                     <div class="cardVacancies">
                         <div class="col-sm-12">
-                            <button class="btn btn-info btnNew" data-toggle="modal"
-                                data-target="#exampleModalLong">Nueva publicación</button>
+                            <button class="btn btn-info btnNew" data-toggle="modal" data-target="#postModalLong">Nueva
+                                publicación</button>
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <ul class="list-group">
+                        <b>Filtrar publicación</b><br>
+                        Universidad
+                        <select id="selCollege" class="form-control menuPost" required>
+                            <option value="0">Todas las universidades</option>
+                            <option value="1">Universidad Manuela Beltrán</option>
+                            <option value="2">Universidad de La Salle</option>
+                            <option value="3">Universidad Militar Nueva Granada</option>
+                        </select><br>
+                        Fecha de publicación
+                        <select id="selCollege" class="form-control menuPost" required>
+                            <option value="0">Todos los tiempos</option>
+                            <option value="1">Últimas 24 horas</option>
+                            <option value="2">Hace una semana</option>
+                            <option value="3">Hace un mes</option>
+                        </select>
+                    </ul>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-10">
+            <div class="col-sm-12 col-md-9">
                 <div class="cardVacancies">
                     <div class="cardHome">
                         <div class="card-header">
@@ -52,7 +71,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    <div class="modal fade" id="postModalLong" tabindex="-1" role="dialog" aria-labelledby="postModalLongTitle"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -73,7 +92,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label for="txtTitle">Título de la vacante</label>
+                                    <label for="txtTitle">Título de la publicación</label>
                                     <input id="txtTitle" class="form-control" type="text"
                                         placeholder="Escribe aquí el título de tu publicación" required>
                                 </div>

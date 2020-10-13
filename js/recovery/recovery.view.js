@@ -1,27 +1,27 @@
 var thatRecovery;
 var recoveryView = {
-    init:function(){
+    init: function () {
         thatRecovery = this;
         console.log('recoveryCargado');
         // Listener del evento submit de un formulario
-        $('#recoveryForm').on('submit',thatRecovery.sendRecoveryForm);
-        $('#btnReturn').on('click',thatRecovery.goBack);
+        $('#recoveryForm').on('submit', thatRecovery.sendRecoveryForm);
+        $('#btnReturn').on('click', thatRecovery.goBack);
     },
-    sendRecoveryForm:function(e){
+    sendRecoveryForm: function (e) {
         //Evitar que la página se refresque
         e.preventDefault();
         var txtEmail = $('#txtEmail').val();
         var data = {
-            "usuarioEmail":txtEmail,
+            "usuarioEmail": txtEmail,
         };
-        recoveryControl.recovery(data,thatRecovery.sendRecoveryFormCallBack);
+        recoveryControl.recovery(data, thatRecovery.sendRecoveryFormCallBack);
     },
-    sendRecoveryFormCallBack:function(data){
-        if (data){
+    sendRecoveryFormCallBack: function (data) {
+        if (data) {
             window.location = 'recovery.html'
         }
     },
-    goBack:function(){
+    goBack: function () {
         window.location = 'index.html'
     }
 };

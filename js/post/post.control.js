@@ -1,9 +1,10 @@
 var postControl = {
-    post:function(callBack){
+    post: function (callBack) {
         return _app.ajax({
-            'url':_route.path + _route.post,
-            'completado':callBack,
-            'contentType':'application/json'
+            'url': _route.path + _route.post,
+            'completado': callBack,
+            'contentType': 'application/json',
+            'token': localStorage.token
         });
     }
 };

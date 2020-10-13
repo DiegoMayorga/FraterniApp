@@ -1,10 +1,9 @@
-body{
-    
+body {
     background-color: #abd6f1;
-    color: black !important;
+    color: white !important;
 }
 
-#mainContainer{
+#mainContainer {
     background-color: #0B8AD9;
     margin-top: 60px;
     margin-bottom: 60px;
@@ -14,21 +13,21 @@ body{
     border-radius: 0.15em;
 }
 
-.adjust-button{
+.adjust-button {
     /*background-color: #123273;*/
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-.adjust-center{
+.adjust-center {
     text-align: center;
 }
 
-.adjust-left{
+.adjust-left {
     text-align: left;
 }
 
-.text-logo{
+.text-logo {
     margin-top: 20px;
     margin-bottom: 20px;
     font-family: 'Lobster', cursive;
@@ -37,36 +36,36 @@ body{
     color: #F2F2F2;
 }
 
-.firstColor{
+.firstColor {
     color: #F2F2F2;
 }
 
-.firstColor:hover{
+.firstColor:hover {
     color: #F2F2F2;
     text-decoration: none;
 }
 
-.secondColor{
+.secondColor {
     color: #F2F2F2;
 }
 
-.adjust-button{
+.adjust-button {
     background-color: #012623;
 }
 
-.container{
+.container {
     padding: 0 120px;
 }
 
-.selCollege{
+.selCollege {
     padding: 100%;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #0A31A6 !important;
     border-color: #0A31A6 !important;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: #0A31A6 !important;
 }

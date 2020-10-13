@@ -10,7 +10,7 @@ var _app = {
             'type': (args.metodo) ? args.metodo : 'POST',
             'async': (args.async !== null || args.async !== undefined) ? args.async : true,
             'dataType': (args.tipo) ? args.tipo : 'json',
-            'headers': (args.token) ? {"Authorization": args.token} : null,
+            'headers': (args.token) ? { "Authorization": args.token } : null,
             'success': function (data) {
                 _dom.ocultarCargador();
 

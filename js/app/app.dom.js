@@ -1,10 +1,10 @@
 var _dom = {
-    mostrarCargador:function(){
+    mostrarCargador: function () {
     },
-    ocultarCargador:function(){
+    ocultarCargador: function () {
     },
-    mostrarPanelError:function(dom){
+    mostrarPanelError: function (dom) {
     },
-    mostrarDialogo:function(dom){
+    mostrarDialogo: function (dom) {
     }
 }

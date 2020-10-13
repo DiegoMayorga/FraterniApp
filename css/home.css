@@ -1,29 +1,28 @@
-body{
+body {
     background-color: #F2F2F2 !important;
 }
 
-#homeContainer{
+#homeContainer {
     background-color: #F2F2F2;
     margin-top: 20px;
     padding-right: 0;
     padding-left: 60px;
 }
 
-
-#homeContainer2{
+#homeContainer2 {
     background-color: #abd6f1;
     margin-bottom: 40px;
     padding: 5px 30px;
     color: #3b3f3f;
 }
 
-.home-title{
+.home-title {
     color: black !important;
     font-size: 20px !important;
     margin-left: 0 !important;
 }
 
-.home-logo{
+.home-logo {
     margin: 5px 30px;
     font-family: 'Lobster', cursive;
     font-size: 30px;
@@ -31,12 +30,12 @@ body{
     color: #F2F2F2;
 }
 
-.hoverLogo:hover{
+.hoverLogo:hover {
     color: #abd6f1 !important;
     text-decoration: none !important;
 }
 
-#groupTitle{
+#groupTitle {
     margin-top: 40px !important;
     text-align: left;
 }
@@ -45,31 +44,31 @@ body{
     color: white !important;
 }
 
-.btnSignout{
+.btnSignout {
     background-color: white !important;
     border-radius: 0.5em !important;
     color: #0A31A6 !important;
 }
 
-.btnCreate{
+.btnCreate {
     background-color: #021a63 !important;
     border-radius: 0.5em !important;
     color: white !important;
     margin-right: 10px !important;
 }
 
-.btnCreate2{
+.btnCreate2 {
     background-color: #0A31A6 !important;
     border-radius: 0.5em !important;
     color: white !important;
     margin-right: 10px !important;
 }
 
-.notify{
+.notify {
     margin-right: 20px !important;
 }
 
-.notifyIcon{
+.notifyIcon {
     width: 20px !important;
     height: 20px !important;
     margin-bottom: 2px !important;
@@ -84,7 +83,7 @@ body{
     color: #F2F2F2 !important;
 }
 
-.btn-logout{
+.btn-logout {
     color: #F2F2F2;
     background-color: #4C736F !important;
 }
@@ -94,23 +93,23 @@ body{
     color: lightgrey;
 }
 
-.cardHome{
+.cardHome {
     color: #012623;
     background-color: #4C736F;
     margin: 40px 0;
     border-radius: 0.5em;
 }
 
-.card-header{
+.card-header {
     background-color: #0A31A6 !important;
     color: #F2F2F2 !important;
 }
 
-.card-body{
+.card-body {
     background-color: #F2F2F2 !important;
 }
 
-.card-footer{
+.card-footer {
     background-color: #0A31A6 !important;
     color: #F2F2F2 !important;
 }
@@ -121,35 +120,51 @@ body{
     border-color: #F2F2F2;
 }
 
-.navbar{
+.navbar {
     background-color: #0A31A6 !important;
-    color: white !important; 
+    color: white !important;
 }
 
-.btn-info{
+.btn-info {
     background-color: #0A31A6 !important;
     border-color: none !important;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #0A31A6 !important;
     border-color: none !important;
     color: #F2F2F2 !important;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: #0A31A6 !important;
     color: #F2F2F2 !important;
 }
 
-.btnNew{
+.btnNew {
     margin-top: 40px !important;
 }
 
-.titleP{
+.titleP {
     margin: 20px 0 0 !important;
 }
 
-.jumbotron{
+.jumbotron {
     margin: 80px 0!important;
+}
+
+.list-group {
+    margin-top: 40px !important;
+}
+
+.checkboxInput {
+    margin-right: 10px !important;
+}
+
+.menuPost {
+    width: 80% !important;
+}
+
+.modal-content {
+    color: black !important;
 }
