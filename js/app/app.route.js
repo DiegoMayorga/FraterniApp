@@ -4,5 +4,13 @@ var _route = {
     login: 'user/login',
     users: 'users',
     recovery: 'user/recovery',
-    post: 'post/list'
+    post: {
+        toPost: 'post/topost',
+        list: 'post/list'
+    },
+    company: 'company/signup',
+    vacant: {
+        toVacant: 'vacant/tovacant',
+        list: 'vacant/list',
+    }
 }
