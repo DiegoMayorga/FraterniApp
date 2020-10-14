@@ -10,7 +10,7 @@ var vacantView = {
         e.preventDefault();
         var txtTitle = $('#txtTitle').val();
         var txtVacant = $('#txtVacant').val();
-        var cboCollege = $('#cboCollege').val();
+        var cboCollege = parseInt($('#cboCollege :selected').val());
         var data = {
             'vacanteNombre': txtTitle,
             'vacanteDescripcion': txtVacant,
@@ -21,7 +21,6 @@ var vacantView = {
 
     sendVacantFormCallBack: function (data) {
         if (data) {
-            window.location = 'home.html'
         }
     }
 };

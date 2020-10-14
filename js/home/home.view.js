@@ -33,7 +33,6 @@ var homeView = {
     },
     saveCompany: function(e) {
         e.preventDefault();
-        debugger;
         var txtName = $('#txtName').val();
         var txtEmail = $('#txtEmail').val();
         var txtPhone = $('#txtPhone').val();
@@ -51,7 +50,6 @@ var homeView = {
         homeControl.company(data, thatHome.saveCompanyCallBack);
     },
     saveCompanyCallBack: function(data) {
-        debugger;
         $('#companyModalLong').modal({
             show: 'false'
         });
