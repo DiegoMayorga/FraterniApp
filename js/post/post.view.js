@@ -4,10 +4,25 @@ var postView = {
         thatPost = this;
         // Listener del evento submit de un formulario
         $('#postForm').on('submit', thatPost.sendPostForm);
-        postControl.post(thatPost.postCallBack);        
+        postControl.list(thatPost.listCallBack);       
     },
-    postCallBack:function(data){
+    listCallBack:function(data){
         console.log(data);
+        for (var i = 0; i < data.Posts.length; i++) {
+            thatPost.createPost(data.Posts[i]);
+        }
+    },
+    createPost:function(post){
+        var card = $('<div>').addClass('cardHome');
+        var cardHeader = $('<div>').addClass('card-header').html(post.publicacionTitulo);
+        var cardBody = $('<div>').addClass('card-body');
+        var title = $('<h5>').addClass('card-title').html(post.usuarioNombre);
+        var paragraph = $('<p>').addClass('card-text').html(post.publicacionDescripcion);
+        var cardFooter = $('<div>').addClass('card-footer').addClass('text-muted').html(post.publicacionFechaCreacion);
+        
+        cardBody.append(title).append(paragraph);
+        card.append(cardHeader).append(cardBody).append(cardFooter);
+        $('#posts').append(card);
     },
     sendPostForm: function (e) {
         //Evitar que la página se refresque
@@ -24,7 +39,7 @@ var postView = {
     },
     sendPostFormCallBack: function (data) {
         if (data) {
-            window.location = 'home.html'
+            postControl.list(thatPost.listCallBack);
         }
     }
 };

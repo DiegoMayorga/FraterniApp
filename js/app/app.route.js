@@ -12,5 +12,6 @@ var _route = {
     vacant: {
         toVacant: 'vacant/tovacant',
         list: 'vacant/list',
-    }
+    },
+    logout: 'user/logout'
 }

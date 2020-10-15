@@ -15,5 +15,13 @@ var homeControl = {
             'contentType': 'application/json',
             'token': localStorage.token
         });
+    },
+    logout: function(callBack) {
+        return _app.ajax({
+            'url': _route.path + _route.logout,
+            'completado': callBack,
+            'contentType': 'application/json',
+            'token': localStorage.token
+        });
     }
 };

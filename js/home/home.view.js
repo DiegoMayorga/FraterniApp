@@ -12,7 +12,10 @@ var homeView = {
         $('#homeContainer2').load(html);
     },
     logout: function() {
+        homeControl.logout(thatHome.logoutCallBack);
+        localStorage.token = null;
         window.location = 'index.html'
+
     },
     loadView: function() {
         console.log('Cargando vista');
