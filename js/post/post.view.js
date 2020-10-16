@@ -39,6 +39,7 @@ var postView = {
     },
     sendPostFormCallBack: function (data) {
         if (data) {
+            $('#postModalLong').modal('toggle');
             postControl.list(thatPost.listCallBack);
         }
     }

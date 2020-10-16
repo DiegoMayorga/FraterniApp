@@ -36,10 +36,10 @@ var vacantView = {
             'cboCollege': cboCollege,
         };
         vacantControl.vacant(data, thatVacant.sendVacantFormCallBack);
-        $('#vacantModalLong').close;
     },
     sendVacantFormCallBack: function (data) {
         if (data) {
+            $('#vacantModalLong').modal('toggle');
             vacantControl.list(thatVacant.listCallBack);
         }
     }
