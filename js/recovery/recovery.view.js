@@ -17,8 +17,11 @@ var recoveryView = {
         recoveryControl.recovery(data, thatRecovery.sendRecoveryFormCallBack);
     },
     sendRecoveryFormCallBack: function (data) {
-        if (data) {
-            window.location = 'recovery.html'
+        if (data['res'] == true) {
+            console.log(data);
+            //window.location = 'recovery.html'
+        } else {
+            alert (data['message']);
         }
     },
     goBack: function () {

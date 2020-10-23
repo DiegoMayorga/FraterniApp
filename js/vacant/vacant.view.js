@@ -4,7 +4,13 @@ var vacantView = {
         thatVacant = this;
         // Listener del evento submit de un formulario
         $('#vacantForm').on('submit', thatVacant.sendVacantForm);
-        vacantControl.list(thatVacant.listCallBack);     
+        vacantControl.list(thatVacant.listCallBack);   
+        homeControl.permits(thatVacant.permitsCallBack);
+    },
+    permitsCallBack: function (data){
+        if (data.res){
+            $('.displayed-btn').css('display','inline');
+        }
     },
     listCallBack:function(data){
         console.log(data);

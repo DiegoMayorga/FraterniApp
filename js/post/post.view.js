@@ -8,6 +8,16 @@ var postView = {
     },
     listCallBack:function(data){
         console.log(data);
+        /*var today = new Date();
+        var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+        var test = data.Posts[0]['publicacionFechaCreacion'];
+        if (date > test) {
+            console.log('date es mayor');
+            return;
+        }
+        console.log('es mayor test');
+        return;
+        console.log(data.Posts[0]['publicacionFechaCreacion']);*/
         for (var i = 0; i < data.Posts.length; i++) {
             thatPost.createPost(data.Posts[i]);
         }

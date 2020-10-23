@@ -18,10 +18,12 @@ var indexView = {
         indexControl.login(data, thatIndex.sendLoginFormCallBack);
     },
     sendLoginFormCallBack: function (data) {
-        if (data) {
+        if (data['res'] == true) {
             localStorage.token = data.token;
             window.location = 'home.html';
+            return;
         }
+        alert (data['message']);
     },
     register: function () {
         window.location = 'signup.html';

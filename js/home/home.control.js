@@ -23,5 +23,14 @@ var homeControl = {
             'contentType': 'application/json',
             'token': localStorage.token
         });
+    },
+    permits: function(callBack) {
+        return _app.ajax({
+            'url': _route.path + _route.permits,
+            'completado': callBack,
+            'contentType': 'application/json',
+            'token': localStorage.token,
+            'metodo': 'GET'
+        });
     }
 };

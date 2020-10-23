@@ -10,6 +10,12 @@ var homeView = {
         html = 'welcome.html';
         $('#homeContainer2').empty();
         $('#homeContainer2').load(html);
+        homeControl.permits(thatHome.permitsCallBack);
+    },
+    permitsCallBack: function (data){
+        if (!data.res){
+            $('.hidden-btn').css('display','inline');
+        }
     },
     logout: function() {
         homeControl.logout(thatHome.logoutCallBack);
@@ -59,6 +65,7 @@ var homeView = {
         if (data) {
 
         }
+        homeControl.permits(thatHome.permitsCallBack);
     }
 };
 homeView.init();

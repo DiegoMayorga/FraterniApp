@@ -174,3 +174,15 @@ body {
 .my-sm-0 {
     margin-top: 10px !important;
 }
+
+.hidden-btn{
+    display:none;
+}
+
+.displayed-btn{
+    display:inline;
+}
+
+.dropdown-menu-adjust{
+    margin-left: -90px !important;
+}
