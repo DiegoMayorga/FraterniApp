@@ -13,7 +13,7 @@ var vacantView = {
         }
     },
     listCallBack:function(data){
-        console.log(data);
+        $('#vacancies').empty();
         for (var i = 0; i < data.Vacants.length; i++) {
             thatVacant.createVacant(data.Vacants[i]);
         }
@@ -24,11 +24,18 @@ var vacantView = {
         var cardBody = $('<div>').addClass('card-body');
         var title = $('<h5>').addClass('card-title').html(vacant.nombreUser);
         var paragraph = $('<p>').addClass('card-text').html(vacant.vacanteDescripcion);
-        var cardFooter = $('<div>').addClass('card-footer').addClass('text-muted').html(vacant.fechasRegistro);
+        var cardFooter = $('<div>').addClass('card-footer').addClass('text-muted')
+        .html('Hace ' + thatVacant.getDaysVacancies(vacant.fechasRegistro) + ' días');
 
         cardBody.append(title).append(paragraph);
         card.append(cardHeader).append(cardBody).append(cardFooter);
         $('#vacancies').append(card);
+    },
+    getDaysVacancies:function(date){
+        var newDate = new Date(date);
+        var currentDate = new Date();
+        var difference = currentDate.getTime() - newDate.getTime();
+        return Math.trunc(difference / (1000 * 3600 * 24));
     },
     sendVacantForm: function (e) {
         //Evitar que la página se refresque

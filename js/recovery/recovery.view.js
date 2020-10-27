@@ -17,9 +17,12 @@ var recoveryView = {
         recoveryControl.recovery(data, thatRecovery.sendRecoveryFormCallBack);
     },
     sendRecoveryFormCallBack: function (data) {
+        console.log(data);
         if (data['res'] == true) {
             console.log(data);
+            console.log('Hola')
             //window.location = 'recovery.html'
+            alert (data['message']);
         } else {
             alert (data['message']);
         }

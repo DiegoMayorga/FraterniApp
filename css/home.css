@@ -186,3 +186,7 @@ body {
 .dropdown-menu-adjust{
     margin-left: -90px !important;
 }
+
+#filterForm{
+    padding: 0 10px !important;
+}

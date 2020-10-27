@@ -6,7 +6,8 @@ var _route = {
     recovery: 'user/recovery',
     post: {
         toPost: 'post/topost',
-        list: 'post/list'
+        list: 'post/list',
+        filter: 'post/filter'
     },
     company: 'company/signup',
     vacant: {

@@ -4,20 +4,12 @@ var postView = {
         thatPost = this;
         // Listener del evento submit de un formulario
         $('#postForm').on('submit', thatPost.sendPostForm);
-        postControl.list(thatPost.listCallBack);       
+        $('#filterForm').on('submit', thatPost.sendFilterForm);
+        postControl.list(thatPost.listCallBack);
+
     },
     listCallBack:function(data){
-        console.log(data);
-        /*var today = new Date();
-        var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
-        var test = data.Posts[0]['publicacionFechaCreacion'];
-        if (date > test) {
-            console.log('date es mayor');
-            return;
-        }
-        console.log('es mayor test');
-        return;
-        console.log(data.Posts[0]['publicacionFechaCreacion']);*/
+        $('#posts').empty();
         for (var i = 0; i < data.Posts.length; i++) {
             thatPost.createPost(data.Posts[i]);
         }
@@ -28,11 +20,18 @@ var postView = {
         var cardBody = $('<div>').addClass('card-body');
         var title = $('<h5>').addClass('card-title').html(post.usuarioNombre);
         var paragraph = $('<p>').addClass('card-text').html(post.publicacionDescripcion);
-        var cardFooter = $('<div>').addClass('card-footer').addClass('text-muted').html(post.publicacionFechaCreacion);
+        var cardFooter = $('<div>').addClass('card-footer').addClass('text-muted')
+        .html('Hace ' + thatPost.getDaysPosts(post.publicacionFechaCreacion) + ' días');
         
         cardBody.append(title).append(paragraph);
         card.append(cardHeader).append(cardBody).append(cardFooter);
         $('#posts').append(card);
+    },
+    getDaysPosts:function(date){
+        var newDate = new Date(date);
+        var currentDate = new Date();
+        var difference = currentDate.getTime() - newDate.getTime();
+        return Math.trunc(difference / (1000 * 3600 * 24));
     },
     sendPostForm: function (e) {
         //Evitar que la página se refresque
@@ -41,11 +40,23 @@ var postView = {
         var txtVacant = $('#txtVacant').val();
         var cboCollege = parseInt($('#cboCollege :selected').val());
         var data = {
-            "publicacionTitulo": txtTitle,
-            "publicacionDescripcion": txtVacant,
+            'publicacionTitulo': txtTitle,
+            'publicacionDescripcion': txtVacant,
             'cboCollege': cboCollege
         };
         postControl.post(data, thatPost.sendPostFormCallBack);
+    },
+    sendFilterForm: function (e){
+        e.preventDefault();
+        var selCollege = parseInt($('#selCollege :selected').val());
+        var selDate = $('#selDate').val();
+        var txtSearch = $('#txtSearch').val();
+        var data = {
+            'cboCollege': selCollege,
+            'publicacionFechaCreacion': selDate,
+            'words': txtSearch
+        };
+        postControl.filter(data, thatPost.sendPostFormCallBack);
     },
     sendPostFormCallBack: function (data) {
         if (data) {

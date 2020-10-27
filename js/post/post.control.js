@@ -16,5 +16,13 @@ var postControl = {
             'token': localStorage.token,
             'metodo': 'GET'
         });
+    },
+    filter: function(callBack) {
+        return _app.ajax({
+            'url': _route.path + _route.post.filter,
+            'completado': callBack,
+            'contentType': 'application/json',
+            'token': localStorage.token
+        });
     }
 };

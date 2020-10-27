@@ -28,12 +28,16 @@
                             <option value="3">Universidad Militar Nueva Granada</option>
                         </select><br>
                         Fecha de vacante
-                        <select id="selCollege" class="form-control menuPost" required>
-                            <option value="0">Todos los tiempos</option>
-                            <option value="1">Últimas 24 horas</option>
-                            <option value="2">Hace una semana</option>
-                            <option value="3">Hace un mes</option>
-                        </select>
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="date"
+                                pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])/(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])/(?:30))|(?:(?:0[13578]|1[02])-31))"
+                                placeholder="yyyy-mm-dd" aria-label="Search">
+                        </form><br> Buscar publicación
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Buscar publicación"
+                                aria-label="Search">
+                            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Buscar</button>
+                        </form>
                     </ul>
                 </div>
             </div>

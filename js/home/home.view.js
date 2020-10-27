@@ -57,6 +57,7 @@ var homeView = {
             'id_sector': txtSector
         };
         homeControl.company(data, thatHome.saveCompanyCallBack);
+        homeControl.permits(thatHome.permitsCallBack);
     },
     saveCompanyCallBack: function(data) {
         $('#companyModalLong').modal({
